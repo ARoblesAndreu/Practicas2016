@@ -1,8 +1,9 @@
 package practica3;
-// Multiplo1.java
-// Fecha: 14/10/2013
-// Autor/a:.......
-// Escribe en pantalla los múltiplos de 2 por debajo de un TOPE, 16.
+/** Multiplo2.java
+  * Fecha: 21/11/2016
+  * Autor: Alvaro Robles Andreu
+  * Muestra los multiplos de 2 hasta un tope leido por teclado usando metodos.
+  */
 
 import java.util.Scanner;
 public class Multiplo2 	{

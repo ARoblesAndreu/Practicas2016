@@ -1,12 +1,13 @@
 package practica3;
-/** Rombo.java
+/** Rombo2.java
  * Fecha: 21/11/2016
  * Autor: Alvaro Robles Andreu
  * Crea un rombo de un numero de filas leido por teclado usando metodos
+ * y encadenando el rombo en un solo String.
  */
 
 import java.util.Scanner;
-public class Rombo 	{
+public class Rombo2 	{
 	public static void main(String argumentos[]) {
 		Scanner teclado = new Scanner (System.in);
 		int numero;
@@ -15,36 +16,36 @@ public class Rombo 	{
 		System.out.println(mensaje);
 		mensaje = "Introduzca el número: ";
 		numero = teclado.nextInt();
-		rombo(numero);}
-	public static void rombo(int numero){
-		
+		System.out.println(rombo(numero));}
+	public static String rombo(int numero){
+		String resultado = "";
 		if (numero % 2 == 0){
-			System.out.println("El número es Par. Este programa requiere números impares");
-			return;
+			return "El número es Par. Este programa requiere números impares";
 		}
 	
 		//bucle para filas
 		for (int i = 1; i <= (numero / 2) + 1; i++) {
 			//bucle para espacios
 			for (int j = 0; j < (numero / 2) + 1 -i; j++) {
-				System.out.print(" ");
+				resultado += (" ");
 			}
 		
 			//bucle para asteriscos
 			for (int k = 0; k < (i * 2) -1 ;k++) {
-				System.out.print("*");
+				resultado += ("*");
 			}	
-			System.out.print("\n");	
+			resultado += ("\n");	
 		}
 		for (int i = (numero /2); i > 0; i--) {
 			for (int j = (numero /2) -i ; j >= 0; j--) {
-				System.out.print(" ");
+				resultado += (" ");
 			}
 			
 			for (int k = (i * 2) -1; k > 0 ; k--){
-				System.out.print("*");
+				resultado += ("*");
 			}
-			System.out.print("\n");	
-		}	
+			resultado += ("\n");	
+		}
+		return resultado;
 	}
 }

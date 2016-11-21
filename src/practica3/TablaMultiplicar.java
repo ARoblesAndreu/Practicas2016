@@ -1,8 +1,10 @@
 package practica3;
-// Multiplo1.java
-// Fecha: 14/10/2013
-// Autor/a:.......
-// Escribe en pantalla los múltiplos de 2 por debajo de un TOPE, 16.
+/** TablaMultiplicar.java
+ * Fecha: 21/11/2016
+ * Autor: Alvaro Robles Andreu
+ * Programa que muestra la tabla de multiplicar de un número leido por teclado
+ * mientras que el resultado de l amultiplicacion no sea mayor a 15
+ */
 
 import java.util.Scanner;
 public class TablaMultiplicar	{

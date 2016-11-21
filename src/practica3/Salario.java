@@ -1,8 +1,9 @@
 package practica3;
-// Multiplo1.java
-// Fecha: 14/10/2013
-// Autor/a:.......
-// Escribe en pantalla los múltiplos de 2 por debajo de un TOPE, 16.
+/** Salario.java
+ * Fecha: 21/11/2016
+ * Autor: Alvaro Robles Andreu
+ * Calcula el salario de un trabajador dependiendo de el número de horas usando metodos.
+ */
 
 import java.util.Scanner;
 public class Salario 	{

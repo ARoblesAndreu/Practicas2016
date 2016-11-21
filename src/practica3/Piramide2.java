@@ -1,13 +1,13 @@
 package practica3;
-/** Piramide.java
+/** Piramide2.java
  * Fecha: 21/11/2016
  * Autor: Alvaro Robles Andreu
- * Crea una piramide de un numero de filas leido por teclado usando metodos
+ * Crea una piramide de un numero de filas leido por teclado usando metodos 
+ * y encadenando la piramide en un solo String.
  */
 
-
 import java.util.Scanner;
-public class Piramide 	{
+public class Piramide2 	{
 	public static void main(String argumentos[]) {
 		Scanner teclado = new Scanner (System.in);
 		int numero;
@@ -16,21 +16,22 @@ public class Piramide 	{
 		System.out.println(mensaje);
 		mensaje = "Introduzca el número: ";
 		numero = teclado.nextInt();
-		piramide(numero);}
-	public static void piramide(int numero){
-	
+		System.out.println(piramide(numero));}
+	public static String piramide(int numero){
+		String resultado = "";
 		//bucle para filas
 		for (int i = 1; i <= numero; i++) {
 			//bucle para espacios
 			for (int j = 0; j < numero-i; j++) {
-				System.out.print(" ");
+				resultado += (" ");
 			}
 			//bucle para asteriscos
 			for (int k = 0; k < (i * 2) -1 ;k++) {
-				System.out.print("*");
+				resultado += ("*");
 				
 			}
-			System.out.print("\n");
+			resultado += ("\n");
 		}
+		return resultado;
 	}
 }
