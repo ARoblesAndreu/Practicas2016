@@ -30,6 +30,7 @@ public class FibonacciMetodo 	{
 	             fibo1 = fibo2 - fibo1;
 	        }
 	        System.out.println();
+	        teclado.close();
 	    }
 	}
 	 

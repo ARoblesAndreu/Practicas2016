@@ -4,7 +4,6 @@ package practica3;
   * Autor: Alvaro Robles Andreu
   * Muestra por pantalla mis iniciales usando un metodo
   */
-import java.util.Scanner;
 public class Banner 	{
 	public static void main(String argumentos[]) {
 		banner();}

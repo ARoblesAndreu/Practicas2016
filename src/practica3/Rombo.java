@@ -15,7 +15,9 @@ public class Rombo 	{
 		System.out.println(mensaje);
 		mensaje = "Introduzca el número: ";
 		numero = teclado.nextInt();
-		rombo(numero);}
+		rombo(numero);
+		teclado.close();
+		}
 	public static void rombo(int numero){
 		
 		if (numero % 2 == 0){

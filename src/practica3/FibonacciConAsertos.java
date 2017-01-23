@@ -14,7 +14,8 @@ public class FibonacciConAsertos {
     public static void main(String[] args) {        
         System.out.println("Número de Fibonacci del término (n).");
         System.out.print("Introduce n = ");
-        int numero = new Scanner(System.in).nextInt();
+        Scanner teclado = new Scanner(System.in);
+        int numero = teclado.nextInt();
 
 
         if (numero >= LIMITE_INFERIOR && numero <= LIMITE_SUPERIOR) {
@@ -26,6 +27,7 @@ public class FibonacciConAsertos {
 +"sólo se admiten valores entre: " 
 + LIMITE_INFERIOR + " y " + LIMITE_SUPERIOR);
         }
+        teclado.close();
     }
 
 

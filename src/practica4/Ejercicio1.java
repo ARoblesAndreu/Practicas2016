@@ -5,6 +5,7 @@
  */
 package practica4;
 
+
 public class Ejercicio1 {
 	public static void main (String[] argumentos){
 	int[] elementos = new int[10];
@@ -15,5 +16,5 @@ public class Ejercicio1 {
 		elementos[i]=7;
 		System.out.println(elementos[i]);
 		}//for
-	}//main
+	}///main
 }//class

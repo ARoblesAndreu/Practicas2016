@@ -17,7 +17,7 @@ public class CharBucleN
 		Scanner teclado = new Scanner(System.in);
 
 		char tecla = 'S';
-		String confirmación;
+		String confirmacion;
 		int i = 1;
 
 		do { 
@@ -28,9 +28,9 @@ public class CharBucleN
 			System.out.println(mensaje2);
 			i++;
 			System.out.println("Si desea continuar pulse la tecla S");
-			confirmación = teclado.next();
+			confirmacion = teclado.next();
 		}
-		while(tecla == confirmación.toUpperCase().charAt(0));
+		while(tecla == confirmacion.toUpperCase().charAt(0));
 	}
 }
 

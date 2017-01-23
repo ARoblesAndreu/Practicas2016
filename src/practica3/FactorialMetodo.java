@@ -41,5 +41,7 @@ public class FactorialMetodo 	{
 				System.out.println("El factorial de " + num+ " (" + num + "!) es: " + factorial + ".");
 				System.out.println("Fin del programa");
 			}
+			teclado.close();
+			tecladonum.close();
 		}
 	}

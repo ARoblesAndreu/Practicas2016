@@ -16,7 +16,9 @@ public class Piramide2 	{
 		System.out.println(mensaje);
 		mensaje = "Introduzca el número: ";
 		numero = teclado.nextInt();
-		System.out.println(piramide(numero));}
+		System.out.println(piramide(numero));
+		teclado.close();
+		}
 	public static String piramide(int numero){
 		String resultado = "";
 		//bucle para filas
