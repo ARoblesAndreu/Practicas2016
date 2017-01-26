@@ -1,14 +1,7 @@
 package autoevaluaciónes;
-
-/** Principal.java
- * Fecha: 18/12/2016
- * Autor: Alvaro Robles Andreu
- * Clase Principal que carga datos de usuario en base a un array de enteros
- */
 /**
- * Clase que contiene un array de objetos de la clase Usuario y métodos para las
- * pruebas y manipulación del array.
- * 
+ * Clase que contiene un array de objetos de la clase Usuario
+ * y métodos para las pruebas y manipulación del array.
  * @author ajp
  */
 public class Datos {
@@ -55,7 +48,10 @@ public class Datos {
 
 	// Otros métodos...
 	public static void importarUsuariosTexto(String datosTexto) {
-
+	/** Metodo que separa e importa los datos de los usuarios y
+	 * 	los introduce dentro de datosUsuarios[]
+	 * @author Alvaro Robles Andreu
+	 */
 		// Creamos el array usuariosTexto y le introducimos el split
 		String[] usuariosTexto = datosTexto.split(";");
 
